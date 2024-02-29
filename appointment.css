@@ -1,0 +1,20 @@
+.btn-appointment {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #075d2c;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .btn-appointment:hover {
+    background-color: #054822;
+  }
+  .modal-content {
+  
+    background-color: #fefefe;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    margin-top: 5em;
+  }
+  

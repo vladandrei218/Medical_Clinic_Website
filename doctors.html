@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="func.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="Logo_1.png" alt="Logo">
+    </a>
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn"><b><span id="service"><b>Services</b></span><span class="arrow"></span></b></a>
+        <div class="dropdown-content">
+          <a href="#">Service 1</a>
+          <a href="#">Service 2</a>
+          <a href="#">Service 3</a>
+        </div>
+      </li>
+      <li><a href="doctors.html"><b>Doctors</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+    </ul>
+  </nav>
+  <div class="container" id="dct">
+    <div class="doctor" onclick="openModal('doctor1')">
+      <img src="doctor_1.png" alt="Doctor 1">
+      <p>Dr. Olivia Davis</p>
+      <p>Specialization: Clinical Neurophysiology</p>
+    </div>
+
+    <div id="doctor1-modal" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal('doctor1')">&times;</button>
+        <p>Born on 6 December 1982, Dr. Olivia Davis studied medicine at the University of Heidelberg, Germany.
+          This specialization focuses on the recording and analysis of electrical activity in the central and peripheral nervous systems. Clinical neurophysiologists often perform tests such as electroencephalograms (EEGs), electromyograms (EMGs), and nerve conduction studies (NCS) to diagnose and monitor neurological conditions.
+        </p>
+      </div>
+    </div>
+
+    <div class="doctor" onclick="openModal('doctor2')">
+      <img src="doctor_2.png" alt="Doctor 2">
+      <p>Dr. Benjamin Smith</p>
+      <p>Specialization: Neuromuscular Medicine</p>
+    </div>
+
+    <div id="doctor2-modal" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal('doctor2')">&times;</button>
+        <p>Born on 9 July 1992, Dr. Benjamin Smith studied medicine at West University of Timisoara, Romania.
+          Neuromuscular medicine specialists diagnose and treat conditions that affect the nerves that control the muscles (such as muscular dystrophy, neuropathies, and myopathies). They often perform nerve and muscle biopsies, electromyography (EMG), and nerve conduction studies (NCS) to evaluate and manage these disorders.
+        </p>
+      </div>
+    </div>
+    <div class="doctor" onclick="openModal('doctor3')">
+      <img src="doctor_3.png" alt="Doctor 3">
+      <p>Dr. Ethan Johnson</p>
+      <p>Specialization: Neurocritical Care</p>
+    </div>
+
+    <div id="doctor3-modal" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal('doctor3')">&times;</button>
+        <p>Born on 24 January 1989, Dr. Ethan Johnson studied medicine at University of Madrid, Spain.
+          Neurocritical care specialists are trained to provide intensive care to patients with life-threatening neurological conditions such as strokes, traumatic brain injuries, brain hemorrhages, and seizures. They work in specialized units and employ advanced monitoring and treatment techniques to optimize patient outcomes.
+        </p>
+      </div>
+    </div>
+    <div class="doctor" onclick="openModal('doctor4')">
+      <img src="doctor_4.png" alt="Doctor 4">
+      <p>Dr. Sophia Wilson</p>
+      <p>Specialization: Neuro-oncology</p>
+    </div>
+
+    <div id="doctor4-modal" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal('doctor4')">&times;</button>
+        <p>Born on 10 June 1995, Dr. Sophia Wilson studied medicine at Cambridge University, United Kingdom.
+          Neuro-oncologists specialize in the diagnosis and treatment of brain and spinal cord tumors. They work closely with neurosurgeons and radiation oncologists to develop comprehensive treatment plans that may include surgery, chemotherapy, and radiation therapy.
+        </p>
+      </div>
+    </div>
+    <div class="doctor" onclick="openModal('doctor5')">
+      <img src="doctor_5.png" alt="Doctor 5">
+      <p>Dr. Alexander Brown</p>
+      <p>Specialization: Pediatric Neurology</p>
+    </div>
+
+    <div id="doctor5-modal" class="modal">
+      <div class="modal-content" id="modal-content2">
+        <button class="close" onclick="closeModal('doctor5')">&times;</button>
+        <p>Born on 12 April 1986, Dr. Alexander Brown Studied medicine at Harvard University, United States.
+          Pediatric neurologists focus on the diagnosis and treatment of neurological disorders in children. They address a wide range of conditions such as epilepsy, developmental delays, genetic disorders, neuromuscular disorders, and autism spectrum disorders.
+        </p>
+      </div>
+    </div>
+    <div class="doctor" onclick="openModal('doctor6')">
+      <img src="doctor_6.png" alt="Doctor 6">
+      <p>Dr. Isabella Thompson</p>
+      <p>Specialization: Stroke and Cerebrovascular Diseases</p>
+    </div>
+
+    <div id="doctor6-modal" class="modal">
+      <div class="modal-content" id="modal-content2">
+        <button class="close" onclick="closeModal('doctor6')">&times;</button>
+        <p>Born on 17 February 1994, Dr. Isabella Thompson studied medicine at University of Dortmund, Germany.
+          Specialists in stroke and cerebrovascular diseases focus on the prevention, diagnosis, and treatment of strokes and other conditions affecting blood vessels in the brain. They may specialize in interventional procedures to remove blood clots or repair damaged blood vessels, as well as provide long-term management and rehabilitation for stroke patients.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="appointment.css">
+  <script src="func.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="Logo_1.png" alt="Logo">
+    </a>
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li class="dropdown">
+        <a href="" class="dropbtn"><b><span id="service"><b>Services</b></span><span class="arrow"></span></b></a>
+        <div class="dropdown-content">
+          <a href="analysis.html">Analysis</a>
+          <a href="operations.html">Operations</a>
+        </div>
+      </li>
+      <li><a href="doctors.php"><b>Doctors</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+      <li><a href="login.php">
+          <img src="login.png" id="login">
+        </a></li>
+      <li>
+        <input type="checkbox" id="darkmode-toggle" onchange="toggleDarkMode()" />
+        <label class="custom-label" for="darkmode-toggle">
+        </label>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1 class="clinic-name">NeuropraXis</h1>
+    <h3 class="clinic-motto">Your neurology clinic</h3>
+    <a href="login.php" class="btn-appointment">Schedule an Appointment</a>
+  </div>
+  <script src="button.js"></script>
+
+</body>
+
+</html>

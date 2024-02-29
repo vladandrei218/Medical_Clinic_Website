@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="Logo_1.png" alt="Logo">
+    </a>
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn"><b><span id="service"><b>Services</b></span><span class="arrow"></span></b></a>
+        <div class="dropdown-content">
+          <a href="analysis.html">Analysis</a>
+          <a href="operations.html">Operations</a>
+        </div>
+      </li>
+      <li><a href="doctors.php"><b>Doctors</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+      <li><a href="login.php">
+        <img src="login.png" id="login">
+      </a></li>
+      <li>
+        <input type="checkbox" id="darkmode-toggle" onchange="toggleDarkMode()" />
+        <label class="custom-label"for="darkmode-toggle">
+        </label>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="google-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.2008373578183!2d21.22942651556692!3d45.74711947910532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d84610655bf%3A0xfd169ff24d29f192!2sWest%20University%20of%20Timi%C8%99oara!5e0!3m2!1sen!2sro!4v1684440997314!5m2!1sen!2sro">
+      </iframe>
+    </div>
+    <div class="contact">
+      <h3><img src="email-logo.png" alt="Email Icon" height="12px" width="16.8px"> Email: <a href="mailto:office@neuropraxis.ro">office@neuropraxis.ro</a></h3>
+      <h3>
+        <img src="phone-logo.png" alt="Phone Icon" height="16.2px" width="12px">
+        Phone: <a href="tel:+40789945347">+40 789 945 347</a> 
+      </h3>
+      <h3>
+        <img src="phone-logo.png" alt="Phone Icon" height="16.2px" width="12px">
+        Phone: <a href="tel:+40717232434">+40 717 232 434</a>
+      </h3>
+    </div>
+  </div>
+  
+  </div>
+  <script src="button.js"></script>
+  
+</body>
+
+</html>

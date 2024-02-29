@@ -1,0 +1,38 @@
+  .custom-label{
+    width: 50px;
+    height: 25px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 20px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    bottom: 10px;
+  }
+  .custom-label:after {
+    content: "";
+    width:17px;
+    height: 17px;
+    position: absolute;
+    top:5px;
+    left:5px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  }
+  input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  input:checked + .custom-label {
+    background: #ebebeb;
+  }
+  input:checked + .custom-label:after {
+    left:45px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+  }
+  .custom-label, .custom-label:after {
+    transition: 0.3s
+  }
